@@ -1,29 +1,13 @@
 {
-    "tasks": [
-        {
-            "type": "cppbuild",
-            "label": "C/C++: clang++.exe 生成活动文件",
-            "command": "C:\\Users\\HP\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20250613-ucrt-x86_64\\bin\\clang++.exe",
-            "args": [
-                "-fcolor-diagnostics",
-                "-fansi-escape-codes",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "调试器生成的任务。"
-        }
-    ],
-    "version": "2.0.0"
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "CMake Build",
+      "type": "shell",
+      "command": "cmake --build build",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ],
+  "C_Cpp.default.includePath": ["${workspaceFolder}/include"]
 }

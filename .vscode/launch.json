@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "调试 Calculator",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/calculator.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "lldb",  // LLVM 配套调试器（你也可以用 gdb）
+      "miDebuggerPath": "lldb-mi", // 如果用 gdb，可以改为 gdb.exe
+      "setupCommands": [
+        {
+          "description": "启用 Pretty Printing",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
