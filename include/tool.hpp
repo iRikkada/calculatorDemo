@@ -8,6 +8,8 @@
 #include<stack>
 #include<sstream>
 #include<cmath>
+#include<vector>
+#include<unordered_set>
 
 //检验括号的匹配性
 bool checkBrackets(const std::string& expr);
@@ -23,6 +25,9 @@ std::string removeSpaces(std::string& str);
 int precedence(char op);
 // 判断运算符的优先级
 bool isHigherPrecedence(char op1, char op2);
-
+// 将字符串分割成tokens 
+std::vector<std::string> strToTokens(std::string& str);
+// 判断是否是预定义函数(如三角函数)
+bool isFuncation(const std::string& token);
 
 #endif 
