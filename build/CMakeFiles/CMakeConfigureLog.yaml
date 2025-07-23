@@ -13,6 +13,28 @@ events:
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/clang.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is Clang, found in:
+        E:/C_PLUS/Demo/build/CMakeFiles/4.0.3/CompilerIdC/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:2 (project)"
     message: |
@@ -34,13 +56,179 @@ events:
     kind: "try_compile-v1"
     backtrace:
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-m638mg"
+      binary: "E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-m638mg"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/clang-scan-deps.exe"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-m638mg'
+        
+        Run Build Command(s): C:/PROGRA~1/LLVM-M~1/bin/ninja.exe -v cmTC_cf58f
+        [1/2] C:\\PROGRA~1\\LLVM-M~1\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_cf58f.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_cf58f.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_cf58f.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCCompilerABI.c"
+        clang version 20.1.8 (https://github.com/llvm/llvm-project.git 87f0227cb60147a26a1eeb4fb06e3b505e9c7261)
+        Target: x86_64-w64-windows-gnu
+        Thread model: posix
+        InstalledDir: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin
+        Configuration file: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/x86_64-w64-windows-gnu.cfg
+         (in-process)
+         "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/clang-20.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-m638mg -v -fcoverage-compilation-dir=E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-m638mg -resource-dir "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20" -dependency-file "CMakeFiles\\\\cmTC_cf58f.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_cf58f.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/usr/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include" -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o CMakeFiles/cmTC_cf58f.dir/CMakeCCompilerABI.c.obj -x c "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCCompilerABI.c"
+        clang -cc1 version 20.1.8 based upon LLVM 20.1.8 default target x86_64-w64-mingw32
+        ignoring nonexistent directory "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/include
+         C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include
+        End of search list.
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM-M~1\\bin\\clang.exe  -v -Wl,-v CMakeFiles/cmTC_cf58f.dir/CMakeCCompilerABI.c.obj -o cmTC_cf58f.exe -Wl,--out-implib,libcmTC_cf58f.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        clang version 20.1.8 (https://github.com/llvm/llvm-project.git 87f0227cb60147a26a1eeb4fb06e3b505e9c7261)
+        Target: x86_64-w64-windows-gnu
+        Thread model: posix
+        InstalledDir: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin
+        Configuration file: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/x86_64-w64-windows-gnu.cfg
+         "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_cf58f.exe "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o" "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows" -v CMakeFiles/cmTC_cf58f.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_cf58f.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a" -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a" -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtend.o"
+        LLD 20.1.8 (https://github.com/llvm/llvm-project.git 87f0227cb60147a26a1eeb4fb06e3b505e9c7261) (compatible with GNU linkers)
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/include]
+          add: [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include]
+        end of search list found
+        collapse include dir [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/include] ==> [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/include]
+        collapse include dir [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include] ==> [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include]
+        implicit include dirs: [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/include;C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-m638mg']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/PROGRA~1/LLVM-M~1/bin/ninja.exe -v cmTC_cf58f]
+        ignore line: [[1/2] C:\\PROGRA~1\\LLVM-M~1\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_cf58f.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_cf58f.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_cf58f.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCCompilerABI.c"]
+        ignore line: [clang version 20.1.8 (https://github.com/llvm/llvm-project.git 87f0227cb60147a26a1eeb4fb06e3b505e9c7261)]
+        ignore line: [Target: x86_64-w64-windows-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin]
+        ignore line: [Configuration file: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/x86_64-w64-windows-gnu.cfg]
+        ignore line: [ (in-process)]
+        ignore line: [ "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/clang-20.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-m638mg -v -fcoverage-compilation-dir=E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-m638mg -resource-dir "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20" -dependency-file "CMakeFiles\\\\cmTC_cf58f.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_cf58f.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/usr/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include" -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o CMakeFiles/cmTC_cf58f.dir/CMakeCCompilerABI.c.obj -x c "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCCompilerABI.c"]
+        ignore line: [clang -cc1 version 20.1.8 based upon LLVM 20.1.8 default target x86_64-w64-mingw32]
+        ignore line: [ignoring nonexistent directory "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/usr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/include]
+        ignore line: [ C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include]
+        ignore line: [End of search list.]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM-M~1\\bin\\clang.exe  -v -Wl -v CMakeFiles/cmTC_cf58f.dir/CMakeCCompilerABI.c.obj -o cmTC_cf58f.exe -Wl --out-implib libcmTC_cf58f.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [clang version 20.1.8 (https://github.com/llvm/llvm-project.git 87f0227cb60147a26a1eeb4fb06e3b505e9c7261)]
+        ignore line: [Target: x86_64-w64-windows-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin]
+        ignore line: [Configuration file: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/x86_64-w64-windows-gnu.cfg]
+        link line: [ "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_cf58f.exe "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o" "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows" -v CMakeFiles/cmTC_cf58f.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_cf58f.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a" -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a" -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtend.o"]
+          arg [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/ld.lld] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_cf58f.exe] ==> ignore
+          arg [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o] ==> obj [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o]
+          arg [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o] ==> obj [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o]
+          arg [-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib] ==> dir [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib]
+          arg [-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib] ==> dir [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib]
+          arg [-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib] ==> dir [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib]
+          arg [-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows] ==> dir [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_cf58f.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_cf58f.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a] ==> lib [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a]
+          arg [-lunwind] ==> lib [unwind]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a] ==> lib [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a]
+          arg [-lunwind] ==> lib [unwind]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtend.o] ==> obj [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtend.o]
+        linker tool for 'C': C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/ld.lld
+        remove lib [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a]
+        remove lib [msvcrt]
+        remove lib [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a]
+        remove lib [msvcrt]
+        collapse library dir [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib] ==> [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib] ==> [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib]
+        collapse library dir [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib] ==> [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib]
+        collapse library dir [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows] ==> [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows]
+        implicit libs: [mingw32;unwind;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;unwind;moldname;mingwex;kernel32]
+        implicit objs: [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o;C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o;C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtend.o]
+        implicit dirs: [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib;C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib;C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib;C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/ld.lld" "-v"
+      LLD 20.1.8 (https://github.com/llvm/llvm-project.git 87f0227cb60147a26a1eeb4fb06e3b505e9c7261) (compatible with GNU linkers)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
       - "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-wtkivx"
-      binary: "E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-wtkivx"
+      source: "E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-yv0806"
+      binary: "E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-yv0806"
     cmakeVariables:
       CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/clang-scan-deps.exe"
       CMAKE_CXX_FLAGS: ""
@@ -51,17 +239,17 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-wtkivx'
+        Change Dir: 'E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-yv0806'
         
-        Run Build Command(s): C:/PROGRA~1/LLVM-M~1/bin/ninja.exe -v cmTC_0404d
-        [1/2] C:\\PROGRA~1\\LLVM-M~1\\bin\\CLANG_~1.EXE   -v -MD -MT CMakeFiles/cmTC_0404d.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_0404d.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_0404d.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp"
+        Run Build Command(s): C:/PROGRA~1/LLVM-M~1/bin/ninja.exe -v cmTC_5d96a
+        [1/2] C:\\PROGRA~1\\LLVM-M~1\\bin\\CLANG_~1.EXE   -v -MD -MT CMakeFiles/cmTC_5d96a.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_5d96a.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_5d96a.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp"
         clang version 20.1.8 (https://github.com/llvm/llvm-project.git 87f0227cb60147a26a1eeb4fb06e3b505e9c7261)
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin
         Configuration file: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/x86_64-w64-windows-gnu.cfg
          (in-process)
-         "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/clang-20.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-wtkivx -v -fcoverage-compilation-dir=E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-wtkivx -resource-dir "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20" -dependency-file "CMakeFiles\\\\cmTC_0404d.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_0404d.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/include/c++/v1" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include/c++/v1" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/usr/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include" -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o CMakeFiles/cmTC_0404d.dir/CMakeCXXCompilerABI.cpp.obj -x c++ "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp"
+         "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/clang-20.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-yv0806 -v -fcoverage-compilation-dir=E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-yv0806 -resource-dir "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20" -dependency-file "CMakeFiles\\\\cmTC_5d96a.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_5d96a.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/include/c++/v1" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include/c++/v1" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/usr/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include" -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o CMakeFiles/cmTC_5d96a.dir/CMakeCXXCompilerABI.cpp.obj -x c++ "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp"
         clang -cc1 version 20.1.8 based upon LLVM 20.1.8 default target x86_64-w64-mingw32
         ignoring nonexistent directory "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/include/c++/v1"
         ignoring nonexistent directory "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/include"
@@ -72,13 +260,13 @@ events:
          C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/include
          C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include
         End of search list.
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM-M~1\\bin\\CLANG_~1.EXE  -v -Wl,-v CMakeFiles/cmTC_0404d.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_0404d.exe -Wl,--out-implib,libcmTC_0404d.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM-M~1\\bin\\CLANG_~1.EXE  -v -Wl,-v CMakeFiles/cmTC_5d96a.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_5d96a.exe -Wl,--out-implib,libcmTC_5d96a.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
         clang version 20.1.8 (https://github.com/llvm/llvm-project.git 87f0227cb60147a26a1eeb4fb06e3b505e9c7261)
         Target: x86_64-w64-windows-gnu
         Thread model: posix
         InstalledDir: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin
         Configuration file: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/x86_64-w64-windows-gnu.cfg
-         "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_0404d.exe "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o" "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows" -v CMakeFiles/cmTC_0404d.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_0404d.dll.a --major-image-version 0 --minor-image-version 0 -lc++ -lmingw32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a" -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a" -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtend.o"
+         "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_5d96a.exe "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o" "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows" -v CMakeFiles/cmTC_5d96a.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_5d96a.dll.a --major-image-version 0 --minor-image-version 0 -lc++ -lmingw32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a" -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a" -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtend.o"
         LLD 20.1.8 (https://github.com/llvm/llvm-project.git 87f0227cb60147a26a1eeb4fb06e3b505e9c7261) (compatible with GNU linkers)
         
       exitCode: 0
@@ -112,17 +300,17 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: 'E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-wtkivx']
+        ignore line: [Change Dir: 'E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-yv0806']
         ignore line: []
-        ignore line: [Run Build Command(s): C:/PROGRA~1/LLVM-M~1/bin/ninja.exe -v cmTC_0404d]
-        ignore line: [[1/2] C:\\PROGRA~1\\LLVM-M~1\\bin\\CLANG_~1.EXE   -v -MD -MT CMakeFiles/cmTC_0404d.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_0404d.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_0404d.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [Run Build Command(s): C:/PROGRA~1/LLVM-M~1/bin/ninja.exe -v cmTC_5d96a]
+        ignore line: [[1/2] C:\\PROGRA~1\\LLVM-M~1\\bin\\CLANG_~1.EXE   -v -MD -MT CMakeFiles/cmTC_5d96a.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_5d96a.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_5d96a.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp"]
         ignore line: [clang version 20.1.8 (https://github.com/llvm/llvm-project.git 87f0227cb60147a26a1eeb4fb06e3b505e9c7261)]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin]
         ignore line: [Configuration file: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/x86_64-w64-windows-gnu.cfg]
         ignore line: [ (in-process)]
-        ignore line: [ "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/clang-20.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-wtkivx -v -fcoverage-compilation-dir=E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-wtkivx -resource-dir "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20" -dependency-file "CMakeFiles\\\\cmTC_0404d.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_0404d.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/include/c++/v1" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include/c++/v1" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/usr/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include" -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o CMakeFiles/cmTC_0404d.dir/CMakeCXXCompilerABI.cpp.obj -x c++ "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [ "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/clang-20.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-yv0806 -v -fcoverage-compilation-dir=E:/C_PLUS/Demo/build/CMakeFiles/CMakeScratch/TryCompile-yv0806 -resource-dir "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20" -dependency-file "CMakeFiles\\\\cmTC_5d96a.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_5d96a.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/include/c++/v1" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include/c++/v1" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/usr/include" -internal-isystem "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include" -fdeprecated-macro -ferror-limit 19 -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o CMakeFiles/cmTC_5d96a.dir/CMakeCXXCompilerABI.cpp.obj -x c++ "C:/Program Files/CMake/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp"]
         ignore line: [clang -cc1 version 20.1.8 based upon LLVM 20.1.8 default target x86_64-w64-mingw32]
         ignore line: [ignoring nonexistent directory "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/include/c++/v1"]
         ignore line: [ignoring nonexistent directory "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/include"]
@@ -133,19 +321,19 @@ events:
         ignore line: [ C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/include]
         ignore line: [ C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/include]
         ignore line: [End of search list.]
-        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM-M~1\\bin\\CLANG_~1.EXE  -v -Wl -v CMakeFiles/cmTC_0404d.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_0404d.exe -Wl --out-implib libcmTC_0404d.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM-M~1\\bin\\CLANG_~1.EXE  -v -Wl -v CMakeFiles/cmTC_5d96a.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_5d96a.exe -Wl --out-implib libcmTC_5d96a.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
         ignore line: [clang version 20.1.8 (https://github.com/llvm/llvm-project.git 87f0227cb60147a26a1eeb4fb06e3b505e9c7261)]
         ignore line: [Target: x86_64-w64-windows-gnu]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin]
         ignore line: [Configuration file: C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/x86_64-w64-windows-gnu.cfg]
-        link line: [ "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_0404d.exe "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o" "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows" -v CMakeFiles/cmTC_0404d.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_0404d.dll.a --major-image-version 0 --minor-image-version 0 -lc++ -lmingw32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a" -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a" -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtend.o"]
+        link line: [ "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/ld.lld" -m i386pep -Bdynamic -o cmTC_5d96a.exe "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o" "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/mingw/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib" "-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows" -v CMakeFiles/cmTC_5d96a.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_5d96a.dll.a --major-image-version 0 --minor-image-version 0 -lc++ -lmingw32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a" -lunwind -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows/libclang_rt.builtins-x86_64.a" -lunwind -lmoldname -lmingwex -lmsvcrt -lkernel32 "C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtend.o"]
           arg [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/bin/ld.lld] ==> ignore
           arg [-m] ==> ignore
           arg [i386pep] ==> ignore
           arg [-Bdynamic] ==> search dynamic
           arg [-o] ==> ignore
-          arg [cmTC_0404d.exe] ==> ignore
+          arg [cmTC_5d96a.exe] ==> ignore
           arg [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o] ==> obj [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crt2.o]
           arg [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o] ==> obj [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib/crtbegin.o]
           arg [-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib] ==> dir [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/x86_64-w64-mingw32/lib]
@@ -153,9 +341,9 @@ events:
           arg [-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib] ==> dir [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib]
           arg [-LC:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows] ==> dir [C:/Program Files/llvm-mingw-20250709-ucrt-x86_64/lib/clang/20/lib/windows]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_0404d.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [CMakeFiles/cmTC_5d96a.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [--out-implib] ==> ignore
-          arg [libcmTC_0404d.dll.a] ==> ignore
+          arg [libcmTC_5d96a.dll.a] ==> ignore
           arg [--major-image-version] ==> ignore
           arg [0] ==> ignore
           arg [--minor-image-version] ==> ignore

@@ -1,12 +1,7 @@
 # ninja log v7
-40	547	7748923550612961	CMakeFiles/calculator.dir/src/tool.cpp.obj	73e08341346dfdad
-35	582	7748923550561716	CMakeFiles/calculator.dir/src/calculate.cpp.obj	f5d627c734f3c1e3
-37	838	7748923550590548	CMakeFiles/calculator.dir/src/main.cpp.obj	e4190e74c792a8f5
-838	916	7748923558587765	E:/C_PLUS/Demo/bin/calculator.exe	cd2a92e9d91d7f92
-4	548	7748931297005251	CMakeFiles/calculator.dir/src/calculate.cpp.obj	f5d627c734f3c1e3
-548	625	7748931302446131	E:/C_PLUS/Demo/bin/calculator.exe	cd2a92e9d91d7f92
-24	579	7748932461907520	CMakeFiles/calculator.dir/src/calculate.cpp.obj	f5d627c734f3c1e3
-27	794	7748932461933976	CMakeFiles/calculator.dir/src/main.cpp.obj	e4190e74c792a8f5
-5	533	7748935667362126	CMakeFiles/calculator.dir/src/calculate.cpp.obj	f5d627c734f3c1e3
-8	775	7748935667391951	CMakeFiles/calculator.dir/src/main.cpp.obj	e4190e74c792a8f5
-775	860	7748935675071463	E:/C_PLUS/Demo/bin/calculator.exe	cd2a92e9d91d7f92
+6	543	7749469113217600	CMakeFiles/calculator_lib.dir/src/tool.cpp.obj	365c3fbf86431246
+2	633	7749469113177515	CMakeFiles/calculator_lib.dir/src/calculate.cpp.obj	b35ae72e6d9d4eca
+633	706	7749469120056822	libcalculator_lib.dll	38ce5cc80c4afe22
+633	706	7749469120056822	libcalculator_lib.dll.a	38ce5cc80c4afe22
+10	839	7749469113257506	CMakeFiles/calculator_main.dir/main.cpp.obj	975a0d01dee5e708
+840	906	7749469121548050	calculator_main.exe	61dd99caf53e1b3a

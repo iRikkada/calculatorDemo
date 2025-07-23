@@ -1,6 +1,6 @@
 #include <windows.h>
 #undef max //取消windows.h中的max宏定义
-#include"../include/calculate.hpp"
+#include"include/calculate.hpp"
 
 int main()
 {

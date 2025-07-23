@@ -11,7 +11,7 @@ class Calculate
             Result(double value = 0.0, const std::string& msg = "", bool err = false)
                 : realValue(value), errorMsg(msg), error(err) {};
         };
-        Result eval(std::string& expression);
+    Result eval(std::string& expression);
     private:
     std::unordered_map<std::string, std::function<double(double)>> functions = {
         {"sin", [](double x) { return std::sin(x); }},

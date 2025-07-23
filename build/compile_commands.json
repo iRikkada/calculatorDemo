@@ -1,20 +1,20 @@
 [
 {
   "directory": "E:/C_PLUS/Demo/build",
-  "command": "C:\\PROGRA~1\\LLVM-M~1\\bin\\CLANG_~1.EXE -IE:/C_PLUS/Demo/include -g -std=gnu++11 -o CMakeFiles\\calculator.dir\\src\\calculate.cpp.obj -c E:\\C_PLUS\\Demo\\src\\calculate.cpp",
+  "command": "C:\\PROGRA~1\\LLVM-M~1\\bin\\CLANG_~1.EXE -Dcalculator_lib_EXPORTS -IE:/C_PLUS/Demo/include -g -std=gnu++17 -o CMakeFiles\\calculator_lib.dir\\src\\calculate.cpp.obj -c E:\\C_PLUS\\Demo\\src\\calculate.cpp",
   "file": "E:\\C_PLUS\\Demo\\src\\calculate.cpp",
-  "output": "CMakeFiles\\calculator.dir\\src\\calculate.cpp.obj"
+  "output": "CMakeFiles\\calculator_lib.dir\\src\\calculate.cpp.obj"
 },
 {
   "directory": "E:/C_PLUS/Demo/build",
-  "command": "C:\\PROGRA~1\\LLVM-M~1\\bin\\CLANG_~1.EXE -IE:/C_PLUS/Demo/include -g -std=gnu++11 -o CMakeFiles\\calculator.dir\\src\\main.cpp.obj -c E:\\C_PLUS\\Demo\\src\\main.cpp",
-  "file": "E:\\C_PLUS\\Demo\\src\\main.cpp",
-  "output": "CMakeFiles\\calculator.dir\\src\\main.cpp.obj"
-},
-{
-  "directory": "E:/C_PLUS/Demo/build",
-  "command": "C:\\PROGRA~1\\LLVM-M~1\\bin\\CLANG_~1.EXE -IE:/C_PLUS/Demo/include -g -std=gnu++11 -o CMakeFiles\\calculator.dir\\src\\tool.cpp.obj -c E:\\C_PLUS\\Demo\\src\\tool.cpp",
+  "command": "C:\\PROGRA~1\\LLVM-M~1\\bin\\CLANG_~1.EXE -Dcalculator_lib_EXPORTS -IE:/C_PLUS/Demo/include -g -std=gnu++17 -o CMakeFiles\\calculator_lib.dir\\src\\tool.cpp.obj -c E:\\C_PLUS\\Demo\\src\\tool.cpp",
   "file": "E:\\C_PLUS\\Demo\\src\\tool.cpp",
-  "output": "CMakeFiles\\calculator.dir\\src\\tool.cpp.obj"
+  "output": "CMakeFiles\\calculator_lib.dir\\src\\tool.cpp.obj"
+},
+{
+  "directory": "E:/C_PLUS/Demo/build",
+  "command": "C:\\PROGRA~1\\LLVM-M~1\\bin\\CLANG_~1.EXE -IE:/C_PLUS/Demo/build/include -IE:/C_PLUS/Demo/include -g -std=gnu++17 -o CMakeFiles\\calculator_main.dir\\main.cpp.obj -c E:\\C_PLUS\\Demo\\main.cpp",
+  "file": "E:\\C_PLUS\\Demo\\main.cpp",
+  "output": "CMakeFiles\\calculator_main.dir\\main.cpp.obj"
 }
 ]

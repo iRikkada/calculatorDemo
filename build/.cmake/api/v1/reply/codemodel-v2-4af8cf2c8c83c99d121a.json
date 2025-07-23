@@ -9,13 +9,14 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.15"
+						"string" : "3.29.0"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "calculator",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -38,9 +40,16 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "calculator::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-calculator-Debug-9739599baaa9d79dafb9.json",
-					"name" : "calculator",
+					"id" : "calculator_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-calculator_lib-Debug-501965dd4096c8e265f9.json",
+					"name" : "calculator_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "calculator_main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-calculator_main-Debug-df6e7bf99d63587d7c22.json",
+					"name" : "calculator_main",
 					"projectIndex" : 0
 				}
 			]

@@ -1,3 +1,4 @@
-E:/C_PLUS/Demo/build/CMakeFiles/calculator.dir
+E:/C_PLUS/Demo/build/CMakeFiles/calculator_lib.dir
+E:/C_PLUS/Demo/build/CMakeFiles/calculator_main.dir
 E:/C_PLUS/Demo/build/CMakeFiles/edit_cache.dir
 E:/C_PLUS/Demo/build/CMakeFiles/rebuild_cache.dir
